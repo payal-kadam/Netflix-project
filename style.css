@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("assets/images/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    height: 80vh;
+    position: relative;
+}
+.main .box{
+    height: 80vh;
+    width:100%;
+    background-color: black;
+    opacity: 0.65;
+    position: absolute;
+    top:0;
+
+}
+@media screen and (max-width:1300px){
+    .first{
+        flex-wrap:wrap;
+    }
+}
+nav{
+    max-width: 60vw;
+    margin:auto;
+    display: flex;
+    height: 62px;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+nav img{
+    color:rgb(151, 120, 120);
+    width: 130px;
+    position: relative;
+    z-index: 10;  /*ithe jo netfix cha logo ahe to pop out zla ahe*/
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;/*line khali alya*/
+    position: relative;
+    z-index: 10;
+    font-family: Martel Sans, sans-serif;
+    gap: 24px;
+    padding: 0 30px;
+    height: calc( 100% - 62px ); /*APLI ji separation line boundary parynt yete*/
+    
+}
+.hero >:first-child{  /* he > ka lavlay te indicate kart ki to immediate child ahe ani apla zo Email address input ahe tyachi font size mothi nhai hot*/
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+.hero >:nth-child(2){
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.separation{
+    background-color:grey;
+    height:4px;
+    width:100%;
+    position:relative;
+    z-index:10;
+}
+.btn{
+    padding:3px 8px;
+    font-weight: 400;
+    color:white;
+    background-color:rgba(78, 80, 76, 0.486);
+    border:1px solid white;
+}
+.btn-red{
+    background-color: red;
+    color:white;
+    font-size: 20px;
+    padding:8px 23px;
+    border-radius: 8px;
+    border:2px solid red
+
+}
+.main input{
+    padding:7px 101px 8px 14px ;
+    border-radius: 8px;
+    font-size: small;
+    color:rgb(255, 255, 255);
+    background-color: rgba(35, 30, 30, 0.7);
+    border:2px solid rgba(23, 23, 23,0.5)
+}
+.btn-red-sn{
+    background-color: red;
+    color:white;
+    border:2px solid red
+ 
+}
+.hero-btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.first{
+    display: flex;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+.secimg {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.secimg img {
+    /* margin-top ni image thodi khali yete */
+    margin-top: 20px; 
+    width: 40vw;
+    position: relative;
+    z-index: 10;
+}
+.secimg video{
+    width:40vw;
+    position:absolute
+}
+.first div>:first-child{
+    font-weight: 900;
+    font-size: xx-large;
+    font-family: Martel Sans, sans-serif;
+}
+.faq h1{
+    text-align: center;
+    color:white;
+    margin-top: 20px;
+    font-size: x-large;
+}
+.faqbox{
+    display: flex;
+    transition: all 1s ease-out;
+    color: white;
+    max-width: 40vw;
+    padding: 20px;
+    background-color:rgb(29, 28, 28);
+    margin:auto;
+    margin-top: 34px;
+    margin-bottom: 34px;
+    justify-content: space-between;
+}
+.faqbox:hover{
+    background-color:#414141;
+}
+footer{
+    max-width: 60vw;
+    color:white;
+    margin:auto;
+    padding:34px;
+
+}
+.question{
+    margin-left: 34px;
+    margin-top: 34px;
+    margin-bottom: 20px;
+}
+footer a{
+    text-decoration: none;
+    color:white
+}
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin:34px 34px;
+    
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    gap:23px;
+    
+}
